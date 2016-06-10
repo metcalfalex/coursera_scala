@@ -18,7 +18,7 @@ http://joelabrahamsson.com/learning-scala/
 ```bash
 cd /c/git/coursera_scala
 git add README.md
-git commit -m 'x'
+git commit -m 'tools setup'
 git push
 ```
 
@@ -35,11 +35,11 @@ Next Steps:
 
 ### Tools Setup
 
-#### AWS EC2 for java/scala
+#### AWS EC2 for java/scala (linux)
 
 See https://github.com/metcalfalex/quickstream > Launch server
 
-#### Installing JDK
+#### Installing JDK (linux)
 
 https://gist.github.com/tankchintan/1335220
 
@@ -53,7 +53,7 @@ rm jdk-8u91-linux-x64.rpm
 
 ```
 
-#### Installing SBT
+#### Installing SBT (linux)
 
 http://www.scala-sbt.org/release/docs/Setup.html
 
@@ -65,9 +65,41 @@ sudo yum install sbt
 sbt about
 ```
 
+#### Installing JDK (windows)
+
+http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
+
+#### Installing SBT (windows)
+
+
+#### Installing Scala IDE for Exlipse (windows)
+
+
+
 ### Assignment submission
 
-http://chara.epfl.ch/~dockermoocs/progfun1/example.zip
+```bash
+mkdir wk01
+cd wk01
+wget http://chara.epfl.ch/~dockermoocs/progfun1/example.zip
+unzip example.zip
+```
+
+Interpreter = REPL = read, eval, print, loop
+
+```bash
+sbt
+console
+println("hello hello")
+val l = List(1, 2, 3)
+val squares = l.map(x => x * x)
+```
+
+ctrl-d exists scala repl  
+ctrl-c exists sbt shell  
+
+
+
 
 
 
