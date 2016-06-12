@@ -3,6 +3,8 @@ Functional Programming Principles in Scala
 
 https://www.coursera.org/learn/progfun1
 
+http://www.tryscala.com/
+
 ## Week 0
 
 ### Google: Scala Tutorial
@@ -122,3 +124,30 @@ ctrl-c exists sbt shell
 
 ### Functions and Evaluation
 
+Call by Name: only call required parameters  
+Call by Value: evaluate all parameters regardless of whether required
+
+Default is CBV  
+Use => to force CBN
+
+def: cbn  
+val: cbv (on definition)
+
+```scala
+// attempt 1:  
+def and(x:Boolean, y:Boolean): Boolean = {if (x) {if (y) {true}else{false}}else{false}}
+
+// attempt 2:
+def and(x: => Boolean, y: => Boolean) = if (x) {if (y) true else false} else false
+and(true,true)
+```
+
+ctrl-shift-f: auto format
+
+```scala
+def sqrIter(guess: Double, x: Double): Double = {
+	if (isGoodEnough(guess,x)) guess
+	else sqrtIter(improve(guess, x), x)
+}
+
+```
