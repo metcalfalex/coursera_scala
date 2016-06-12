@@ -18,7 +18,7 @@ http://joelabrahamsson.com/learning-scala/
 ```bash
 cd /c/git/coursera_scala
 git add README.md
-git commit -m 'tools setup'
+git commit -m 'windows installation added'
 git push
 ```
 
@@ -33,13 +33,13 @@ Next Steps:
 1. Tools setup  
 2. Practice submitting an assignment  
 
-### Tools Setup
+### Tools Setup (linux)
 
-#### AWS EC2 for java/scala (linux)
+#### AWS EC2 for java/scala
 
 See https://github.com/metcalfalex/quickstream > Launch server
 
-#### Installing JDK (linux)
+#### Installing JDK
 
 https://gist.github.com/tankchintan/1335220
 
@@ -53,7 +53,7 @@ rm jdk-8u91-linux-x64.rpm
 
 ```
 
-#### Installing SBT (linux)
+#### Installing SBT
 
 http://www.scala-sbt.org/release/docs/Setup.html
 
@@ -65,16 +65,32 @@ sudo yum install sbt
 sbt about
 ```
 
-#### Installing JDK (windows)
+### Tools Setup (windows)
+
+#### Installing JDK
 
 http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
 
-#### Installing SBT (windows)
+#### Installing SBT
 
+http://www.scala-sbt.org/
 
 #### Installing Scala IDE for Exlipse (windows)
 
+http://scala-ide.org/download/sdk.html
 
+#### Installing Scala SBT plugin
+
+If it doesn't already exist, create the following folder/file:  
+C:\Users\metcaal\.sbt\0.13\plugins\plugins.sbt
+
+Place the following statement into pluginst.sbt:  
+```
+addSbtPlugin("com.typesafe.sbteclipse" % "sbteclipse-plugin" % "4.0.0")
+```
+
+Run sbt from windows command line.  
+if set up correctly, sbt should download JAR files required for plugin.
 
 ### Assignment submission
 
