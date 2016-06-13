@@ -20,11 +20,7 @@ http://joelabrahamsson.com/learning-scala/
 ```bash
 cd /c/git/coursera_scala
 git add README.md
-<<<<<<< HEAD
-git commit -m 'windows installation more details'
-=======
-git commit -m 'wk01 video notes'
->>>>>>> refs/remotes/origin/master
+git commit -m 'clashes 2'
 git push
 ```
 
@@ -124,12 +120,7 @@ val squares = l.map(x => x * x)
 ctrl-d exists scala repl  
 ctrl-c exists sbt shell  
 
-
 List(3,2,1).sum
-
-
-
-
 
 ### Functions and Evaluation
 
