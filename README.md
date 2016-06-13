@@ -20,7 +20,7 @@ http://joelabrahamsson.com/learning-scala/
 ```bash
 cd /c/git/coursera_scala
 git add README.md
-git commit -m 'windows installation added'
+git commit -m 'wk01 video notes'
 git push
 ```
 
