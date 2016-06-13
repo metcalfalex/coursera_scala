@@ -18,7 +18,7 @@ http://joelabrahamsson.com/learning-scala/
 ```bash
 cd /c/git/coursera_scala
 git add README.md
-git commit -m 'windows installation added'
+git commit -m 'windows installation more details'
 git push
 ```
 
@@ -82,15 +82,19 @@ http://scala-ide.org/download/sdk.html
 #### Installing Scala SBT plugin
 
 If it doesn't already exist, create the following folder/file:  
-C:\Users\metcaal\.sbt\0.13\plugins\plugins.sbt
+C:\Users\[username]\.sbt\0.13\plugins\plugins.sbt
 
 Place the following statement into pluginst.sbt:  
 ```
 addSbtPlugin("com.typesafe.sbteclipse" % "sbteclipse-plugin" % "4.0.0")
 ```
 
-Run sbt from windows command line.  
-if set up correctly, sbt should download JAR files required for plugin.
+Navigate to C:\git\coursera_scala\wk01\example  
+Run from windows command line:  
+```base
+sbt eclipse
+```
+if set up correctly, sbt should (after a few minutes) download JAR files required for plugin.
 
 ### Assignment submission
 
@@ -115,6 +119,7 @@ ctrl-d exists scala repl
 ctrl-c exists sbt shell  
 
 
+List(3,2,1).sum
 
 
 
