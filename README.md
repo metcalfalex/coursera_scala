@@ -24,6 +24,15 @@ git commit -m 'clashes 2'
 git push
 ```
 
+### SBT console
+
+```base
+cd C:\git\coursera_scala\wk01\example
+sbt
+console // compile code and run console
+test // run through unit test files
+```
+
 ## Week 1
 
 ### Getting Started
@@ -122,7 +131,15 @@ ctrl-c exists sbt shell
 
 List(3,2,1).sum
 
+[1,3,2]
+tempmax = 1
+if 3 > 1 tempmax = 3
+if 2 > 3 tempmax = 3
+if [] empty tempmax = 3
+
 ### Functions and Evaluation
+
+#### Video Notes
 
 Call by Name: only call required parameters  
 Call by Value: evaluate all parameters regardless of whether required
@@ -151,3 +168,18 @@ def sqrIter(guess: Double, x: Double): Double = {
 }
 
 ```
+
+#### Assignment
+
+Download .zip to C:\git\coursera_scala\wk01  
+Unzip to here  
+
+In CMD, navigate to C:\git\coursera_scala\wk01\recfun  
+```bash
+sbt
+eclipse
+```
+
+In eclipse, File > Import > Existing Projects into workspace  
+C:\git\coursera_scala\wk01\recfun
+
